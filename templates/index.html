@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Student Registration</h1>
+        <p>Register a student and save the details to MySQL.</p>
+
+        <form id="studentForm">
+            <label for="name">Student name</label>
+            <input id="name" name="name"
+                   type="text" placeholder="Enter your name" required>
+
+            <label for="email">Email address</label>
+            <input id="email" name="email"
+                   type="email" placeholder="Enter your email" required>
+
+            <button type="submit">Register Student</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <h2>Registered Students</h2>
+        <button id="refreshButton" type="button">
+            Refresh Students
+        </button>
+
+        <ul id="studentList"></ul>
+    </main>
+</body>
+</html>
